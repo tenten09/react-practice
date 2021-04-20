@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
 
 const style = {
   backgroundColor: "#c1ffff",
@@ -19,9 +20,9 @@ export const InputTodo = (props) => {
         value={todoText}
         onChange={onChange}
       />
-      <button disabled={disabled} onClick={onClick}>
+      <Button variant="contained" disabled={disabled} onClick={onClick}>
         追加
-      </button>
+      </Button>
     </div>
   );
 };
