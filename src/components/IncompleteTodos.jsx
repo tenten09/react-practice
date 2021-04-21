@@ -1,4 +1,6 @@
 import React from "react";
+// import ReactDOM from 'react-dom';
+import Button from "@material-ui/core/Button";
 
 const style = {
   backgroundColor: "#c6ffe2",
@@ -19,8 +21,20 @@ export const IncompleteTodos = (props) => {
           return (
             <ul key={todo} className="list-row">
               <li>{todo}</li>
-              <button onClick={() => onClickComplete(index)}>完了</button>
-              <button onClick={() => onClickDelete(index)}>削除</button>
+              <Button
+                variant="contained"
+                color="primary"
+                onClick={() => onClickComplete(index)}
+              >
+                完了
+              </Button>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={() => onClickDelete(index)}
+              >
+                削除
+              </Button>
             </ul>
           );
         })}

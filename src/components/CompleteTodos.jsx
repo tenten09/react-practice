@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@material-ui/core/Button";
 
 const style = {
   backgroundColor: "#ffffe0",
@@ -6,8 +7,8 @@ const style = {
   minHeight: "200px",
   padding: "8px",
   margin: "8px",
-  borderRadius: "8px",
-}
+  borderRadius: "8px"
+};
 
 export const CompleteTodos = (props) => {
   const { todos, onClickBack } = props;
@@ -19,7 +20,13 @@ export const CompleteTodos = (props) => {
           return (
             <ul key={todo} className="list-row">
               <li>{todo}</li>
-              <button onClick={() => onClickBack(index)}>戻す</button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                onClick={() => onClickBack(index)}
+              >
+                戻す
+              </Button>
             </ul>
           );
         })}
