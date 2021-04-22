@@ -14,9 +14,10 @@ const style = {
 export const IncompleteTodos = (props) => {
   const { todos, onClickComplete, onClickDelete } = props;
   return (
+    
+
     <div style={style}>
       <p className="title">未完了のTODO</p>
-      <div>
         {todos.map((todo, index) => {
           return (
             <ul key={todo} className="list-row">
@@ -38,7 +39,6 @@ export const IncompleteTodos = (props) => {
             </ul>
           );
         })}
-      </div>
     </div>
   );
 };
