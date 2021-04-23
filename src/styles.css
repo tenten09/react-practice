@@ -1,19 +1,25 @@
 body {
   font-family: sans-serif;
+  vertical-align: baseline;
 }
-input {
+
+.input-field {
   border-radius: 8px;
   border: none;
   padding: 6px 16px;
   outline: none;
+  display: inline;
+  vertical-align: middle;
+  position: relative;
 }
 
-button {
+.add-button {
   border-radius: 8px;
   border: none;
-  margin-right: 4px;
   padding: 4px 16px;
+  margin-top: 13px;
 }
+
 button:hover {
   background-color: #ff7fff;
   color: #fff;
