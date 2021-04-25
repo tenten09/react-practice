@@ -3,7 +3,7 @@ import "./styles.css";
 import { InputTodo } from "./components/InputTodo";
 import { IncompleteTodos } from "./components/IncompleteTodos";
 import { CompleteTodos } from "./components/CompleteTodos";
-import { DateTime } from "./components/DateTime";
+// import { DateTime } from "./components/DateTime";
 
 export const App = () => {
   const [todoText, setTodoText] = useState("");
@@ -45,7 +45,7 @@ export const App = () => {
 
   return (
     <>
-      <DateTime />
+      {/* <DateTime /> */}
       <InputTodo
         todoText={todoText}
         onChange={onChangeTodoText}
